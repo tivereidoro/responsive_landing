@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #f9a826;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url("https://postimg.cc/8f7Z9N7c/1500x600") center/cover no-repeat;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hero_container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero_container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero_container .btn {
+  background-color: #f9a826;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero_container .btn:hover {
+  background-color: #e68a00;
+}
+.hero_image {
+  width: 40%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.hero_image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.hero-content {
+  /* max-width: 600px; */
+  margin: auto;
+  text-align: left;
+  color: black;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f9a826;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-grid {
+  margin: 70px 0;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: #f9a826;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links a {
+  color: white;
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container,
+  .features-grid,
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: left;
+  }
+
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .hero_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero_container .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .hero_container h1 {
+    font-size: 2rem;
+  }
+  .hero_container p {
+    font-size: 1rem;
+  }
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero_image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+/* Add any additional styles here */
+/* End of CSS */
